@@ -1,6 +1,6 @@
 const FORM = document.getElementById("form")
 const QUOTE_LIST = document.getElementById("quote-list")
-let quoteCount = 0
+
 loadQuote()
 
 FORM.addEventListener('submit',function (event){
@@ -24,8 +24,7 @@ function addQuote(quote, author){
     DIV.appendChild(AUTHOR) 
     QUOTE_LIST.appendChild(DIV)
     const COUNT = document.getElementById("count")
-    quoteCount += 1
-    COUNT.innerText = `${quoteCount} citations`
+    COUNT.innerText = `${Object.keys(localStorage).length} citations`
 }
 
 function Local(quote, author){
