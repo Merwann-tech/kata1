@@ -7,8 +7,16 @@ FORM.addEventListener('submit',function (event){
     event.preventDefault()
     let citationInput = document.getElementById("citationInput").value
     let authorInput = document.getElementById("authorInput").value
-    Local(citationInput, authorInput)
-    loadQuote()
+    if (citationInput == ""){
+        alert("tu doit ecrire une citation")
+    }
+    else if(authorInput == "" ){
+        alert("tu doit ecrire un nom d'auteur")
+    }
+    else{
+        Local(citationInput, authorInput)
+        loadQuote()
+    }
 })
 
 function addQuote(quote, author){
