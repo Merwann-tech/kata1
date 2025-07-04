@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>citation</title>
+    <script defer type="module" src="script.js"></script>
+</head>
+<body>
+    <h1>Mes citations</h1>
+    <h2>Gestionnaire de citations en ligne</h2>
+    <h3 id="count">0 citations</h3>
+    <hr>
+    <form id="form" action="">
+        <label for="citationInput">saisir la citation:</label>
+        <input id="citationInput" type="text" >
+        <label for="authorInput">saisir le nom de l’auteur ou de l’autrice:</label>
+        <input id="authorInput" type="text" >
+        <button type="submit">soumettre la citation</button>
+    </form>
+    <div id="quote-list">
+        <div class="quote">
+            <p class="text">Citation : "On ne naît pas femme, on le devient."</p>
+            <p class="author">Autrice : Simone de Beauvoir</p>
+        </div>
+    </div>
+</body>
+</html>
