@@ -13,13 +13,13 @@ FORM.addEventListener('submit',function (event){
 
 function addQuote(quote, author){
     const TEXT = document.createElement('p') 
-    TEXT.setAttribute = ("class", "text")
+    TEXT.classList.add("text")
     TEXT.innerText = `Citation : "${quote}"`
     const AUTHOR = document.createElement('p') 
-    AUTHOR.setAttribute = ("class", "author")
+    AUTHOR.classList.add("author")
     AUTHOR.innerText = `Autrice : ${author}`
     const DIV = document.createElement('div')
-    DIV.setAttribute = ("class", "quote")
+    DIV.classList.add("quote")
     DIV.appendChild(TEXT) 
     DIV.appendChild(AUTHOR) 
     QUOTE_LIST.appendChild(DIV)
